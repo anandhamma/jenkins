@@ -1,11 +1,4 @@
-pipeline {
-    agent {
-        label "windows"
-    }
-    tools {
-        maven 'Maven3.5.4'
-  
-    }
+
     node ('master') {
         stage 'checkout' {
             checkout scm
@@ -25,6 +18,6 @@ pipeline {
 
            
             }
-        }
+        
     
 
