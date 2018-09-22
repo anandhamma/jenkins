@@ -6,7 +6,7 @@ pipeline {
         maven 'Maven3.5.4'
   
     }
-    stages {
+    node ('master') {
         stage 'checkout' {
             checkout scm
             }
