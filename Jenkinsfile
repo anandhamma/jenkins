@@ -7,12 +7,12 @@ pipeline {
   
     }
     stages {
-        stage ('checkout') {
+        stage 'checkout' {
             checkout scm
             }
         }
 
-        stage ('Build') {
+        stage 'Build' {
             steps {
                     bat 'cd NumberGenerator'
             }
