@@ -3,7 +3,7 @@
         stage 'checkout' {
             checkout scm
             }
-        }
+        
 
         stage 'Build' {
             steps {
@@ -16,7 +16,7 @@
                  }
                
 
-           
+        }
             }
         
     
